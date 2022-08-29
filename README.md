@@ -1,5 +1,21 @@
 # NgCrud
 
+## List Page
+
+![list](https://user-images.githubusercontent.com/37026328/187307176-9e8a040c-2639-413f-9b6d-6469492e68bb.png)
+
+## Edit Page
+
+![edit](https://user-images.githubusercontent.com/37026328/187307180-1ef91d22-53b2-4db4-8fa7-c31a252a1315.png)
+
+# How to start?
+Clone this project
+Run in terminal "npm install & npm start"
+
+To run the json server, open a separate terminal and write "npx json-server --watch db.json"
+
+##  That's all, enjoy :)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
 ## Development server
