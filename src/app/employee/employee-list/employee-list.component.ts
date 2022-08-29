@@ -2,6 +2,7 @@ import { ToastrService } from 'ngx-toastr';
 import { EmployeeService } from './../employe.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-employee-list',
@@ -17,6 +18,7 @@ export class EmployeeListComponent implements OnInit {
     private employeeService: EmployeeService,
     private toastr: ToastrService,
     private activatedRoute: ActivatedRoute,
+    private translate: TranslateService
   ) { }
 
   ngOnInit() {
@@ -32,7 +34,7 @@ export class EmployeeListComponent implements OnInit {
 
   delUser(employee: { id: any; }) {
     this.employeeService.deleteEmp(employee.id).subscribe(res => {
-      this.toastr.success('İşlem başarılı bir şekilde tamamlandı!');
+      this.toastr.success(this.translate.instant('success'));
       this.getAllEmp();
     })
   }

@@ -5,12 +5,6 @@
       "surname": "Ipsum",
       "email": "lorem@ipsum.com",
       "id": 1
-    },
-    {
-      "name": "Test",
-      "surname": "Testt",
-      "email": "test@test.com",
-      "id": 2
     }
   ]
 }

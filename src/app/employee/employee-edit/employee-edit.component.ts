@@ -3,6 +3,7 @@ import { EmployeeService } from '../employe.service';
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employe';
 import { ActivatedRoute, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-employee-edit',
@@ -18,7 +19,8 @@ export class EmployeeEditComponent implements OnInit {
     private employeService: EmployeeService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private translate: TranslateService
   ) { }
 
   ngOnInit() {
@@ -32,7 +34,7 @@ export class EmployeeEditComponent implements OnInit {
   update() {
     this.employeService.updateEmp(this.id, this.employies).subscribe(res => {
       this.employies = res;
-      this.toastr.success('İşlem başarılı bir şekilde tamamlandı!')
+      this.toastr.success(this.translate.instant('success'));
       this.router.navigate(['/employe-list']);
     })
   }

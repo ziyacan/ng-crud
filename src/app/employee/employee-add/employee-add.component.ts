@@ -3,6 +3,7 @@ import { ToastrService } from 'ngx-toastr';
 import { EmployeeService } from '../employe.service';
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employe';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-employee-add',
@@ -16,7 +17,8 @@ export class EmployeeAddComponent implements OnInit {
   constructor(
     private employeeService: EmployeeService,
     private toastr: ToastrService,
-    private router: Router
+    private router: Router,
+    private translate: TranslateService
   ) { }
 
   ngOnInit() {
@@ -25,7 +27,7 @@ export class EmployeeAddComponent implements OnInit {
 
   save() {
     this.employeeService.createEmploye({ model: this.employies }).subscribe(res => {
-      this.toastr.success('İşlem başarılı bir şekilde tamamlandı!')
+      this.toastr.success(this.translate.instant('success'));
       this.router.navigate(['/employe-list'])
     })
   }
