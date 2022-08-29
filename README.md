@@ -9,9 +9,10 @@
 ![edit](https://user-images.githubusercontent.com/37026328/187307180-1ef91d22-53b2-4db4-8fa7-c31a252a1315.png)
 
 # How to start?
-## Clone this project
-## Write in terminal "npm install & npm start"
-## To run the json server, open a separate terminal and write "npx json-server --watch db.json"
+Clone this project
+Run in terminal "npm install & npm start"
+
+To run the json server, open a separate terminal and write "npx json-server --watch db.json"
 
 ##  That's all, enjoy :)
 
