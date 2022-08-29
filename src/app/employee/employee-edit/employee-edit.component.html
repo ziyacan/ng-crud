@@ -1,0 +1,33 @@
+<div class="card card-user mx-auto mt-20 w-80 sm:w-full block p-6 max-w-md bg-white text-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+  <div class="card-header">
+    <h5 class="card-title text-center font-bold uppercase">Kullanıcı Düzenle</h5>
+  </div>
+  <div class="card-body">
+    <form #f="ngForm" class="form">
+      <div class="form-group row">
+        <label class="font-medium">Adı</label>
+        <div class="mt-2">
+          <input type="text" class="form-control w-full" placeholder="Ad" [(ngModel)]="employies.name"  #name="ngModel" name="name" required>
+          <div class="text-danger" *ngIf="name.invalid && (name.dirty || name.touched) ">Bu alanı doldurmanız zorunludur.</div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="font-medium">Soyadı</label>
+        <div class="mt-2">
+          <input type="text" class="form-control w-full" placeholder="Soyadı" [(ngModel)]="employies.surname"  #surname="ngModel" name="surname" required>
+          <div class="text-danger" *ngIf="surname.invalid && (surname.dirty || surname.touched) ">Bu alanı doldurmanız zorunludur.</div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="font-medium">Email</label>
+        <div class="mt-2">
+          <input type="email" class="form-control w-full" placeholder="Email" [(ngModel)]="employies.email" #email="ngModel" name="email"  email="true" required>
+          <div class="text-danger" *ngIf="email.invalid && (email.dirty || email.touched) ">Lütfen geçerli bir email adresi giriniz.</div>
+        </div>
+      </div>
+      <button type="submit" class="px-6 py-3 rounded-xl font-bold mt-3 w-full bg-orange-400" (click)="update()" [disabled]="f.invalid">Düzenle</button>
+      <button type="submit" class="px-6 py-3 rounded-xl font-bold mt-3 w-full bg-orange-700"  [routerLink]="['/']" >İptal</button>
+    </form>
+  </div>
+</div>
+

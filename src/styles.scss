@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import '~ngx-toastr/toastr';
+
+body {
+    background-color: rgb(30 41 59);
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.form-control {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    color: #66615b;
+    line-height: normal;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-shadow: none;
+    padding: 10px;
+}
+
+.form-group {
+    margin: 20px 0;
+}
