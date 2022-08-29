@@ -1,0 +1,18 @@
+{
+  "name": "Name",
+  "surname": "Surname",
+  "email": "Email",
+  "save": "Save",
+  "edit": "Edit",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "add_user": "Add User",
+  "edit_user": "Edit User",
+  "header_title": "ADD/UPDATE PERSONAL",
+  "choose_language": "Choose Language",
+  "required_field": "This field is required.",
+  "valid_email": "Please enter a valid email address.",
+  "language.english": "English",
+  "language.turkish": "Turkish",
+  "success": "Operation completed successfully!"
+}

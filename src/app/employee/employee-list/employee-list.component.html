@@ -3,13 +3,13 @@
       <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
               <th scope="col" class="py-3 px-3 text-white font-bold">
-                  Ad
+                {{ 'name' | translate }}
               </th>
               <th scope="col" class="py-3 px-3 text-white font-bold">
-                  Soyad
+                {{ 'surname' | translate }}
               </th>
               <th scope="col" class="py-3 px-3 text-white font-bold">
-                  Email
+                {{ 'email' | translate }}
               </th>
               <th></th>
               <th></th>
@@ -26,8 +26,8 @@
               <td class="py-4 px-3 truncate max-w-[8rem] md:max-w-none">
                 {{employe.email}}
               </td>
-              <td class="py-4 px-3"><button class="text-orange-400" [routerLink]="['/employe-edit', employe.id]">Edit</button></td>
-              <td class="py-4 px-3"><button class="text-orange-700" (click)="delUser(employe)">Sil</button></td>
+              <td class="py-4 px-3"><button class="text-orange-400" [routerLink]="['/employe-edit', employe.id]">{{ 'edit' | translate }}</button></td>
+              <td class="py-4 px-3"><button class="text-orange-700" (click)="delUser(employe)">{{ 'delete' | translate }}</button></td>
           </tr>
       </tbody>
   </table>

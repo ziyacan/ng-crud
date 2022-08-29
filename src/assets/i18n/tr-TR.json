@@ -1,0 +1,18 @@
+{
+  "name": "Ad",
+  "surname": "Soyad",
+  "email": "Email",
+  "save": "Kaydet",
+  "edit": "Düzenle",
+  "cancel": "İptal",
+  "delete": "Sil",
+  "add_user": "Kullanıcı Ekle",
+  "edit_user": "Kullanıcı Düzenle",
+  "header_title": "KULLANICI EKLE/GÜNCELLE",
+  "choose_language": "Dil Seç",
+  "required_field": "Bu alanı doldurmanız zorunludur.",
+  "valid_email": "Lütfen geçerli bir email adresi giriniz.",
+  "language.english": "İngilizce",
+  "language.turkish": "Türkçe",
+  "success": "İşlem başarılı bir şekilde tamamlandı!"
+}

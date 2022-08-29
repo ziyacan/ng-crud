@@ -1,9 +1,14 @@
 <router-outlet>
   <div class="container mx-auto px-6 sm:border-b-none md:border-b">
     <div class="header block sm:flex justify-between">
-      <p></p>
-      <h1 class="text-center text-white font-bold py-10 text-2xl md:text-3xl"><a [routerLink]="['/']">ADD/UPDATE PERSONAL</a></h1>
-      <button type="submit" class="w-36 rounded-xl text-white font-bold bg-sky-700 h-12 px-3 float-right self-center" [routerLink]="['/employe-add']">Kullanıcı Ekle</button>
+      <div class="language-picker-area self-center text-right md:text-left mt-6 md:mt-0">
+        <select (change)="selectLanguage($event)" class="language-picker p-3 font-bold rounded-sm cursor-pointer">
+          <option value="en-US"> {{ 'language.english' | translate }} </option>
+          <option value="tr-TR"> {{ 'language.turkish' | translate }} </option>
+        </select>
+      </div>
+      <h1 class="text-center text-white font-bold py-10 text-2xl md:text-3xl"><a [routerLink]="['/']">{{ 'header_title' | translate }}</a></h1>
+      <button type="submit" class="w-36 rounded-xl text-white font-bold bg-sky-700 h-12 px-3 float-right self-center" [routerLink]="['/employe-add']">{{ 'add_user' | translate }}</button>
     </div>
   </div>
 </router-outlet>
