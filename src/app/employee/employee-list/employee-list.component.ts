@@ -3,6 +3,7 @@ import { EmployeeService } from './../employe.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-employee-list',
@@ -33,9 +34,26 @@ export class EmployeeListComponent implements OnInit {
   }
 
   delUser(employee: { id: any; }) {
-    this.employeeService.deleteEmp(employee.id).subscribe(res => {
-      this.toastr.success(this.translate.instant('success'));
-      this.getAllEmp();
+    Swal.fire({
+      title: this.translate.instant('you_sure'),
+      text: this.translate.instant('revert'),
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: this.translate.instant('delete_it'),
+      cancelButtonText: this.translate.instant('cancel'),
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.employeeService.deleteEmp(employee.id).subscribe(res => {
+          this.getAllEmp();
+        })
+        Swal.fire(
+          this.translate.instant('deleted'),
+          this.translate.instant('user_deleted'),
+          'success'
+        )
+      }
     })
   }
 

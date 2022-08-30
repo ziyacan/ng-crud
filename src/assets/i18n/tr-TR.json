@@ -12,8 +12,15 @@
   "choose_language": "Dil Seç",
   "required_field": "Bu alanı doldurmanız zorunludur.",
   "valid_email": "Lütfen geçerli bir email adresi giriniz.",
+  "valid_name": "Lütfen geçerli bir isim giriniz.",
+  "valid_surname": "Lütfen geçerli bir soyisim giriniz.",
   "language.english": "İngilizce",
   "language.turkish": "Türkçe",
   "success": "İşlem başarılı bir şekilde tamamlandı!",
-  "empty": "Kullanıcı yok!"
+  "empty": "Kullanıcı yok!",
+  "you_sure": "Emin misiniz?",
+  "revert": "Bu işlemi geri alamazsınız!",
+  "delete_it": "Evet, sil!",
+  "deleted": "Silindi!",
+  "user_deleted": "Kullanıcı silindi."
 }

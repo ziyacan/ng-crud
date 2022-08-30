@@ -12,8 +12,15 @@
   "choose_language": "Choose Language",
   "required_field": "This field is required.",
   "valid_email": "Please enter a valid email address.",
+  "valid_name": "Please enter a valid name.",
+  "valid_surname": "Please enter a valid surname.",
   "language.english": "English",
   "language.turkish": "Turkish",
   "success": "Operation completed successfully!",
-  "empty": "No User!"
+  "empty": "No User!",
+  "you_sure": "Are you sure?",
+  "revert": "You won't be able to revert this!",
+  "delete_it": "Yes, delete it!",
+  "deleted": "Deleted!",
+  "user_deleted": "User has been deleted."
 }
