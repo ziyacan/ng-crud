@@ -1,34 +1,37 @@
 <div class="container mx-auto w-80 md:w-full mt-20 overflow-x-auto relative shadow-md sm:rounded-lg">
   <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-          <tr>
-              <th scope="col" class="py-3 px-3 text-white font-bold">
-                {{ 'name' | translate }}
-              </th>
-              <th scope="col" class="py-3 px-3 text-white font-bold">
-                {{ 'surname' | translate }}
-              </th>
-              <th scope="col" class="py-3 px-3 text-white font-bold">
-                {{ 'email' | translate }}
-              </th>
-              <th></th>
-              <th></th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr *ngFor="let employe of employies" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th scope="row" class="py-4 px-3 font-medium text-gray-900 whitespace-nowrap dark:text-white truncate max-w-[6rem] md:max-w-none">
-                {{employe.name}}
-              </th>
-              <td class="py-4 px-3 truncate max-w-[6rem] md:max-w-none">
-                {{employe.surname}}
-              </td>
-              <td class="py-4 px-3 truncate max-w-[8rem] md:max-w-none">
-                {{employe.email}}
-              </td>
-              <td class="py-4 px-3"><button class="text-orange-400" [routerLink]="['/employe-edit', employe.id]">{{ 'edit' | translate }}</button></td>
-              <td class="py-4 px-3"><button class="text-orange-700" (click)="delUser(employe)">{{ 'delete' | translate }}</button></td>
-          </tr>
-      </tbody>
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+      <tr>
+        <th scope="col" class="py-3 px-3 text-white font-bold">
+          {{ 'name' | translate }}
+        </th>
+        <th scope="col" class="py-3 px-3 text-white font-bold">
+          {{ 'surname' | translate }}
+        </th>
+        <th scope="col" class="py-3 px-3 text-white font-bold">
+          {{ 'email' | translate }}
+        </th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employe of employies" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+        <th scope="row" class="py-4 px-3 font-medium whitespace-nowrap truncate max-w-[6rem] md:max-w-none">
+          {{employe.name}}
+        </th>
+        <td class="py-4 px-3 truncate max-w-[6rem] md:max-w-none">
+          {{employe.surname}}
+        </td>
+        <td class="py-4 px-3 truncate max-w-[8rem] md:max-w-none">
+          {{employe.email}}
+        </td>
+        <td class="py-4 px-3"><button class="text-orange-400" [routerLink]="['/employe-edit', employe.id]">{{ 'edit' | translate }}</button></td>
+        <td class="py-4 px-3"><button class="text-orange-700" (click)="delUser(employe)">{{ 'delete' | translate }}</button></td>
+      </tr>
+    </tbody>
   </table>
+  <div *ngIf="!employies?.length" class="text-center py-3 font-bold text-white w-full capitalize">
+    {{ 'empty' | translate }}
+  </div>
 </div>

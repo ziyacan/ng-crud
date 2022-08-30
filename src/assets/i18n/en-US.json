@@ -14,5 +14,6 @@
   "valid_email": "Please enter a valid email address.",
   "language.english": "English",
   "language.turkish": "Turkish",
-  "success": "Operation completed successfully!"
+  "success": "Operation completed successfully!",
+  "empty": "No User!"
 }

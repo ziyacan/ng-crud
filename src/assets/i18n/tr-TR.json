@@ -14,5 +14,6 @@
   "valid_email": "Lütfen geçerli bir email adresi giriniz.",
   "language.english": "İngilizce",
   "language.turkish": "Türkçe",
-  "success": "İşlem başarılı bir şekilde tamamlandı!"
+  "success": "İşlem başarılı bir şekilde tamamlandı!",
+  "empty": "Kullanıcı yok!"
 }
