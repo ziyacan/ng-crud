@@ -2,15 +2,23 @@
 
 ## List Page
 
-![list](https://user-images.githubusercontent.com/37026328/187307176-9e8a040c-2639-413f-9b6d-6469492e68bb.png)
+![list](https://user-images.githubusercontent.com/37026328/187525815-96ffc773-b4f9-4aeb-9eaf-bd6c0154881b.png)
 
 ## Add Page
 
-![add](https://user-images.githubusercontent.com/37026328/187315831-6a75cc56-9811-4a83-9b40-3b28c48f1a51.png)
+![add](https://user-images.githubusercontent.com/37026328/187525820-5c6b6075-a843-4691-9843-d3a3a645fb5e.png)
 
 ## Edit Page
 
-![edit](https://user-images.githubusercontent.com/37026328/187307180-1ef91d22-53b2-4db4-8fa7-c31a252a1315.png)
+![edit](https://user-images.githubusercontent.com/37026328/187525823-807e77ca-ea3e-40a1-89be-fc6f8e81db1d.png)
+
+## Mobile
+
+![mobile](https://user-images.githubusercontent.com/37026328/187525827-58be9398-ce7c-44be-a3ca-328e03bc7a19.png)
+
+## Modal
+
+![modal](https://user-images.githubusercontent.com/37026328/187525821-2f6b48ca-7712-4646-a777-2934f66c4d3b.png)
 
 # How to start?
 Clone this project
