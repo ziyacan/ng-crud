@@ -1,12 +1,12 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 @import '~ngx-toastr/toastr';
 
 body {
     background-color: rgb(30 41 59);
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 
