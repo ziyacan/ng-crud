@@ -1,5 +1,7 @@
 # NgCrud
 
+Medium article : https://medium.com/@ziyacanistanbullu/how-to-crud-in-angular-14-json-server-3f71c898d7af
+
 ## List Page
 
 ![list](https://user-images.githubusercontent.com/37026328/187525815-96ffc773-b4f9-4aeb-9eaf-bd6c0154881b.png)
